@@ -18,10 +18,7 @@ import (
 	"github.com/xtls/xray-core/infra/conf"
 
 	"github.com/vlesstop/XrayR/api"
-	"github.com/vlesstop/XrayR/api/pmpanel"
-	"github.com/vlesstop/XrayR/api/proxypanel"
 	"github.com/vlesstop/XrayR/api/sspanel"
-	"github.com/vlesstop/XrayR/api/v2raysocks"
 	_ "github.com/vlesstop/XrayR/cmd/distro/all"
 	"github.com/vlesstop/XrayR/service"
 	"github.com/vlesstop/XrayR/service/controller"
