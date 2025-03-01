@@ -26,7 +26,7 @@ A Xray backend framework that can easily support many panels.
 ## 免责声明
 
 本项目只是本人个人学习开发并维护，本人不保证任何可用性，也不对使用本软件造成的任何后果负责。
-本项目已删减，仅支持v2board
+# 本项目已删减，仅支持v2board
 
 ## 特点
 
