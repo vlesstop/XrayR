@@ -107,7 +107,6 @@ jobs:
           echo "GOOS: $GOOS, GOARCH: $GOARCH, GOARM: $GOARM, GOMIPS: $GOMIPS, RELEASE_NAME: $_NAME"
           echo "ASSET_NAME=$_NAME" >> $GITHUB_OUTPUT
           echo "ASSET_NAME=$_NAME" >> $GITHUB_ENV
-
       - name: Set up Go
         uses: actions/setup-go@v3
         with:
@@ -121,7 +120,6 @@ jobs:
         run: |
           mkdir -p build_assets
           go build -v -o build_assets/XrayR -trimpath -ldflags "-s -w -buildid="
-
       - name: Build Mips softfloat XrayR
         if: matrix.goarch == 'mips' || matrix.goarch == 'mipsle'
         run: |
@@ -131,7 +129,6 @@ jobs:
         run: |
           cd ./build_assets || exit 1
           mv XrayR XrayR.exe
-
       - name: Prepare to release
         uses: nick-fields/retry@v3
         with:
