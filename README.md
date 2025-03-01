@@ -100,6 +100,6 @@ wget -N https://raw.githubusercontent.com/vlesstop/XrayR-release/master/install.
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/wyx2685/XrayR.svg)](https://starchart.cc/wyx2685/XrayR)
+[![Stargazers over time](https://starchart.cc/vlesstop/XrayR.svg)](https://starchart.cc/vlesstop/XrayR)
 
 
