@@ -135,7 +135,7 @@ func (p *Panel) loadCore(panelConfig *Config) *core.Instance {
 	config := &core.Config{
 		App: []*serial.TypedMessage{
 			serial.ToTypedMessage(coreLogConfig.Build()),
-			serial.ToTypedMessage(&mydispatcher.Config{}),
+			//serial.ToTypedMessage(&mydispatcher.Config{}),
 			serial.ToTypedMessage(&stats.Config{}),
 			serial.ToTypedMessage(&proxyman.InboundConfig{}),
 			serial.ToTypedMessage(&proxyman.OutboundConfig{}),
@@ -175,16 +175,16 @@ func (p *Panel) Start() {
 			apiClient = sspanel.New(nodeConfig.ApiConfig)
 		case "NewV2board", "V2board":
 			apiClient = newV2board.New(nodeConfig.ApiConfig)
-		case "PMpanel":
-			apiClient = pmpanel.New(nodeConfig.ApiConfig)
-		case "Proxypanel":
-			apiClient = proxypanel.New(nodeConfig.ApiConfig)
-		case "V2RaySocks":
-			apiClient = v2raysocks.New(nodeConfig.ApiConfig)
-		case "GoV2Panel":
-			apiClient = gov2panel.New(nodeConfig.ApiConfig)
-		case "BunPanel":
-			apiClient = bunpanel.New(nodeConfig.ApiConfig)
+		//case "PMpanel":
+		//	apiClient = pmpanel.New(nodeConfig.ApiConfig)
+		//case "Proxypanel":
+		//	apiClient = proxypanel.New(nodeConfig.ApiConfig)
+		//case "V2RaySocks":
+		//	apiClient = v2raysocks.New(nodeConfig.ApiConfig)
+		//case "GoV2Panel":
+		//	apiClient = gov2panel.New(nodeConfig.ApiConfig)
+		//case "BunPanel":
+		//	apiClient = bunpanel.New(nodeConfig.ApiConfig)
 		default:
 			log.Panicf("Unsupport panel type: %s", nodeConfig.PanelType)
 		}
