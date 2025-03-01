@@ -26,6 +26,7 @@ A Xray backend framework that can easily support many panels.
 ## 免责声明
 
 本项目只是本人个人学习开发并维护，本人不保证任何可用性，也不对使用本软件造成的任何后果负责。
+本项目已删减，仅支持v2board
 
 ## 特点
 
@@ -61,13 +62,8 @@ A Xray backend framework that can easily support many panels.
 
 | 前端                                                     | vmess | vless | trojan | shadowsocks |
 |--------------------------------------------------------|-------|-------|--------|-------------------------|
-| sspanel-uim                                            | √     | √     | √      | √ (单端口多用户和V2ray-Plugin) |
 | v2board                                                | √     | √     | √      | √                       |
-| [PMPanel](https://github.com/ByteInternetHK/PMPanel)   | √     | √     | √      | √                       |
-| [ProxyPanel](https://github.com/ProxyPanel/ProxyPanel) | √     | √     | √      | √                       |
-| [WHMCS (V2RaySocks)](https://v2raysocks.doxtex.com/)   | √     | √     | √      | √                       |
-| [GoV2Panel](https://github.com/pingProMax/gov2panel)   | √     | √     | √      | √                       |
-| [BunPanel](https://github.com/pennyMorant/bunpanel-release)   | √     | √     | √      | √                       |
+
 
 ## 软件安装
 
