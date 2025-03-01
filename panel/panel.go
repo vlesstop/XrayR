@@ -6,10 +6,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/vlesstop/XrayR/api/bunpanel"
-	"github.com/vlesstop/XrayR/api/gov2panel"
+
 	"github.com/vlesstop/XrayR/api/newV2board"
-	"github.com/vlesstop/XrayR/app/mydispatcher"
 
 	"dario.cat/mergo"
 	"github.com/r3labs/diff/v2"
