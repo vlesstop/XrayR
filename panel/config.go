@@ -1,8 +1,8 @@
 package panel
 
 import (
-	"github.com/wyx2685/XrayR/api"
-	"github.com/wyx2685/XrayR/service/controller"
+	"github.com/vlesstop/XrayR/api"
+	"github.com/vlesstop/XrayR/service/controller"
 )
 
 type Config struct {

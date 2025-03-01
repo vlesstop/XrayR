@@ -1,18 +1,18 @@
 ## 本分支需要配合修改过的V2board面板进行使用
-https://github.com/wyx2685/v2board
+https://github.com/vlesstop/v2board
 
 # XrayR
 [![](https://img.shields.io/badge/TgChat-@UnOfficialV2board讨论-blue.svg)](https://t.me/unofficialV2board)
 [![](https://img.shields.io/badge/TgChat-@XrayR讨论-blue.svg)](https://t.me/XrayR_project)
 [![](https://img.shields.io/badge/Channel-@XrayR通知-blue.svg)](https://t.me/XrayR_channel)
-![](https://img.shields.io/github/stars/wyx2685/XrayR)
-![](https://img.shields.io/github/forks/wyx2685/XrayR)
-![](https://github.com/wyx2685/XrayR/actions/workflows/release.yml/badge.svg)
-![](https://github.com/wyx2685/XrayR/actions/workflows/docker.yml/badge.svg)
-[![Github All Releases](https://img.shields.io/github/downloads/wyx2685/XrayR/total.svg)]()
+![](https://img.shields.io/github/stars/vlesstop/XrayR)
+![](https://img.shields.io/github/forks/vlesstop/XrayR)
+![](https://github.com/vlesstop/XrayR/actions/workflows/release.yml/badge.svg)
+![](https://github.com/vlesstop/XrayR/actions/workflows/docker.yml/badge.svg)
+[![Github All Releases](https://img.shields.io/github/downloads/vlesstop/XrayR/total.svg)]()
 
 
-[English](https://github.com/wyx2685/XrayR/blob/master/README-en.md)|[Iranian](https://github.com/wyx2685/XrayR/blob/master/README_Fa.md)|[Vietnamese](https://github.com/wyx2685/XrayR/blob/master/README-vi.md)
+[English](https://github.com/vlesstop/XrayR/blob/master/README-en.md)|[Iranian](https://github.com/vlesstop/XrayR/blob/master/README_Fa.md)|[Vietnamese](https://github.com/vlesstop/XrayR/blob/master/README-vi.md)
 
 A Xray backend framework that can easily support many panels.
 
@@ -90,7 +90,7 @@ wget -N https://raw.githubusercontent.com/vlesstop/XrayR-release/master/install.
 
 ## Licence
 
-[Mozilla Public License Version 2.0](https://github.com/wyx2685/XrayR/blob/master/LICENSE)
+[Mozilla Public License Version 2.0](https://github.com/vlesstop/XrayR/blob/master/LICENSE)
 
 ## Telgram
 
