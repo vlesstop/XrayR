@@ -6,8 +6,10 @@ import (
 	"os"
 	"sync"
 
-
+	"github.com/vlesstop/XrayR/api/bunpanel"
+	"github.com/vlesstop/XrayR/api/gov2panel"
 	"github.com/vlesstop/XrayR/api/newV2board"
+	"github.com/vlesstop/XrayR/app/mydispatcher"
 
 	"dario.cat/mergo"
 	"github.com/r3labs/diff/v2"
@@ -18,7 +20,10 @@ import (
 	"github.com/xtls/xray-core/infra/conf"
 
 	"github.com/vlesstop/XrayR/api"
+	"github.com/vlesstop/XrayR/api/pmpanel"
+	"github.com/vlesstop/XrayR/api/proxypanel"
 	"github.com/vlesstop/XrayR/api/sspanel"
+	"github.com/vlesstop/XrayR/api/v2raysocks"
 	_ "github.com/vlesstop/XrayR/cmd/distro/all"
 	"github.com/vlesstop/XrayR/service"
 	"github.com/vlesstop/XrayR/service/controller"
@@ -135,7 +140,7 @@ func (p *Panel) loadCore(panelConfig *Config) *core.Instance {
 	config := &core.Config{
 		App: []*serial.TypedMessage{
 			serial.ToTypedMessage(coreLogConfig.Build()),
-			//serial.ToTypedMessage(&mydispatcher.Config{}),
+			serial.ToTypedMessage(&mydispatcher.Config{}),
 			serial.ToTypedMessage(&stats.Config{}),
 			serial.ToTypedMessage(&proxyman.InboundConfig{}),
 			serial.ToTypedMessage(&proxyman.OutboundConfig{}),
@@ -175,16 +180,16 @@ func (p *Panel) Start() {
 			apiClient = sspanel.New(nodeConfig.ApiConfig)
 		case "NewV2board", "V2board":
 			apiClient = newV2board.New(nodeConfig.ApiConfig)
-		//case "PMpanel":
-		//	apiClient = pmpanel.New(nodeConfig.ApiConfig)
-		//case "Proxypanel":
-		//	apiClient = proxypanel.New(nodeConfig.ApiConfig)
-		//case "V2RaySocks":
-		//	apiClient = v2raysocks.New(nodeConfig.ApiConfig)
-		//case "GoV2Panel":
-		//	apiClient = gov2panel.New(nodeConfig.ApiConfig)
-		//case "BunPanel":
-		//	apiClient = bunpanel.New(nodeConfig.ApiConfig)
+		case "PMpanel":
+			apiClient = pmpanel.New(nodeConfig.ApiConfig)
+		case "Proxypanel":
+			apiClient = proxypanel.New(nodeConfig.ApiConfig)
+		case "V2RaySocks":
+			apiClient = v2raysocks.New(nodeConfig.ApiConfig)
+		case "GoV2Panel":
+			apiClient = gov2panel.New(nodeConfig.ApiConfig)
+		case "BunPanel":
+			apiClient = bunpanel.New(nodeConfig.ApiConfig)
 		default:
 			log.Panicf("Unsupport panel type: %s", nodeConfig.PanelType)
 		}
